@@ -1,0 +1,151 @@
+body {
+    font-family: "Sevillana", cursive;
+    margin: 0 auto;
+    padding: 0 5%;
+    background-color: lemonchiffon;
+}
+
+h1 {
+    max-width: 1440px;
+    margin: 32px auto;
+}
+
+.images {
+    height: 200px;
+    width: 300px;
+    border-radius: 4px;
+    margin: 0 16px 16px 0;
+}
+
+.images:hover {
+    cursor: pointer;
+    transform: translate(2px, 2px);
+    transition: 125ms;
+    box-shadow: 4px 4px 4px 4px grey;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.showImg {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.openImage {
+    max-width: 1440px;
+    object-fit: cover;
+    margin: 0px 5%;
+    border-radius: 8px;
+    aspect-ratio: 2 / 1;
+    width: 70vw !important;
+
+}
+
+.imgContainer {
+    max-width: 1440px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.icons {
+    height: 64px;
+    margin: 5vh;
+}
+
+.icons:hover {
+    cursor: pointer;
+    transform: translate(2px, 2px);
+    transition: 125ms;
+}
+
+.button {
+    font-family: "Sevillana", cursive;
+    font-size: 16px;
+    height: 48px;
+    width: 120px;
+    border-radius: 24px 24px 24px 24px;
+}
+
+.button:hover {
+    transform: translate(2px, 2px);
+    transition: 125ms;
+    cursor: pointer;
+    background-color: gold;
+}
+
+.navIcons {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+@media(max-width: 550px) {
+    .icons {
+        height: 32px;
+        margin: 32px;
+    }
+
+    .images {
+        height: 175px;
+        width: 250px;
+        border-radius: 4px;
+        margin: 0 0 16px 0;
+    }
+
+    .button {
+        height: 32px;
+    }
+
+    .openImage {
+        max-width: 1440px;
+        object-fit: cover;
+        margin: 0px 2%;
+        border-radius: 8px;
+        aspect-ratio: 1 / 1;
+    }
+}
+
+
+@media(max-width: 705px) {
+    .imgContainer {
+        max-width: 1440px;
+        margin: 0px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .showImg {
+        padding-top: 32px;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: black;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+}
